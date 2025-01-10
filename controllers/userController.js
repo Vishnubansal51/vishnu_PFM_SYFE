@@ -1,10 +1,6 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
-
-// Use environment variable for JWT secret
-const JWT_SECRET = 'syfeVishnu'
-
 const registerUser = async (req, res) => {
     const { name, email, password } = req.body;
 
@@ -34,6 +30,7 @@ const registerUser = async (req, res) => {
 
 const loginUser = async (req, res) => {
     const { email, password } = req.body;
+    const JWT_SECRET =   process.env.JWT_SECRET;
 
     // Validate input fields
     if (!email || !password) {

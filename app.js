@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 
 const userRoutes = require('./routes/userRoutes');
-const transactionRoutes = require('./routes/transactionRoutes');
+const transactionRoutes = require('./routes/TransactionRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 const savingsRoutes = require('./routes/savingsRoutes');
 const reportRoutes = require('./routes/reportRoutes');

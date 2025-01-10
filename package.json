@@ -2,10 +2,10 @@
   "name": "syfe",
   "version": "1.0.0",
   "description": "",
-  "main": "backend",
+  "main": "app.js",
   "scripts": {
-    "start": "set NODE_ENV=development&& node app.js",
-    "dev": "set NODE_ENV=development&& nodemon app.js",
+    "start": "set NODE_ENV=development&& node ",
+    "dev": "set NODE_ENV=development&& nodemon ",
     "test": "set NODE_ENV=test&& jest"
   },
   "keywords": [],
