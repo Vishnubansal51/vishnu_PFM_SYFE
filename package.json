@@ -1,0 +1,31 @@
+{
+  "name": "syfe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend",
+  "scripts": {
+    "start": "set NODE_ENV=development&& node app.js",
+    "dev": "set NODE_ENV=development&& nodemon app.js",
+    "test": "set NODE_ENV=test&& jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "canvas": "^3.0.1",
+    "chartjs-node-canvas": "^4.1.6",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7",
+    "syfe": "file:"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  }
+}
