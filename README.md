@@ -7,7 +7,7 @@ Personal Finance Manager: Installation and Setup Guide
 To set up the project, first, clone the repository from the version control system:
 
 git clone <repository-url>
-cd <repository-folder>/backend
+cd <repository-folder>
 
 2. Install Dependencies
 
@@ -16,7 +16,7 @@ npm install
 
 3. Configure Environment Variables
 
-- Create a `.env` file in the root of the `backend` directory.
+- Create a `.env` file in the root of the directory.
 - Add the following key-value pairs:
 JWT_SECRET=your_secret_key
 Replace `your_secret_key` with a secure and random string.
