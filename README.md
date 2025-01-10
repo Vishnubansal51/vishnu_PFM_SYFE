@@ -6,9 +6,9 @@ Personal Finance Manager: Installation and Setup Guide
 
 To set up the project, first, clone the repository from the version control system:
 
-git clone <repository-url>
+git clone https://github.com/Vishnubansal51/vishnu_PFM_SYFE.git
 
-cd <repository-folder>
+cd folder name
 
 2. Install Dependencies
 
