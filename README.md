@@ -45,7 +45,8 @@ npm test -- --runInBand
 Each test file is independent of other test files
 
 By default, Jest runs test files in parallel, which can lead to conflicts when tests share resources like a database. So to run the tests sequentially I used -- --runInBand
-7. API Documentation
+
+## API Documentation
 
 Here are the main routes provided by the server:
 
@@ -81,7 +82,7 @@ Authorization: Bearer <your_token>
 
 
 
-Design Overview and Assumptions
+## Design Overview and Assumptions
 Design Overview:
 The Personal Finance Manager system is designed using the Model-View-Controller (MVC) architecture to ensure a modular, scalable, and maintainable application. It consists of the following components:
 1.	Models:
