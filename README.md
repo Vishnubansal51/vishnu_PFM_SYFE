@@ -36,11 +36,7 @@ By default, the server runs on `http://localhost:3000`.
 
 To run the application in a test environment:
 
-1. Ensure the `.env` file contains:
-NODE_ENV=test
-JWT_SECRET=your_test_secret_key
-
-2. Run the test command:
+Run the test command:
 npm test -- --runInBand
 Each test file is independent of other test files
 
