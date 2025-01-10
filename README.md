@@ -51,38 +51,58 @@ By default, Jest runs test files in parallel, which can lead to conflicts when t
 Here are the main routes provided by the server:
 
 User Management
+
 •	POST /users/register: Register a new user.
+
 •	POST /users/login: Login and receive a JWT token.
+
 Transaction Management:
+
 In transaction: type income will not have any category
 
 Headers:
 Authorization: Bearer <your_token>
+
 •	POST /transactions: Add a new transaction.
+
 •	GET /transactions: View all transactions.
+
 •	PUT /transactions/:id: Update a transaction.
+
 •	DELETE /transactions/:id: Delete a transaction.
+
 Category Management
+
 Headers:
 Authorization: Bearer <your_token>
+
 •	POST /categories: Add a new category.
+
 •	GET /categories: View all categories.
+
 Savings Goals
+
 Headers:
 Authorization: Bearer <your_token>
+
 •	POST /savings: Add a savings goal.
+
 •	GET /savings: View all savings goals.
+
 Reports
+
 Headers:
 Authorization: Bearer <your_token>
 
 •	GET /reports/monthly?month=1&year=2025: Generate a monthly report.
+
 •	GET /reports/yearly?year=2025: Generate a yearly report.
 
 
 
 
 ## Design Overview and Assumptions
+
 Design Overview:
 The Personal Finance Manager system is designed using the Model-View-Controller (MVC) architecture to ensure a modular, scalable, and maintainable application. It consists of the following components:
 1.	Models:
