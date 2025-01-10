@@ -107,29 +107,34 @@ Design Overview:
 The Personal Finance Manager system is designed using the Model-View-Controller (MVC) architecture to ensure a modular, scalable, and maintainable application. It consists of the following components:
 
 1.	Models:
+   
 o	Models define the schema for users, transactions, categories, and savings goals using Sequelize ORM.
 
 o	Relationships between models:
 
-	A user has many transactions, categories, and savings goals.
+ 	A user has many transactions, categories, and savings goals.
 
-	Transactions are associated with categories (for expenses).
+ 	Transactions are associated with categories (for expenses).
 
-	Savings goals track progress using transactions.
+ 	Savings goals track progress using transactions.
 
-3.	Controllers:
+2.	Controllers:
+   
 o	Controllers handle the business logic for each feature, such as user authentication, transaction management, category management, savings goals, and report generation.
 
-5.	Routes:
+4.	Routes:
+
 o	Routes map API endpoints to corresponding controller methods, ensuring separation of concerns.
 
-7.	Database:
+5.	Database:
+
 o	SQLite is used as the database, with Sequelize providing an abstraction layer to define and interact with the schema.
 
-9.	Authentication:
+6.	Authentication:
+
 o	JWT-based authentication secures routes that require user-specific access ( transactions, savings goals, reports)
 
-11.	Reports:
+7.	Reports:
 o	Reports generate insights (e.g., income, expenses, category breakdowns) using transactions, with visual charts saved as PNG files.
 
 ## Assumptions:
@@ -141,7 +146,7 @@ o	Before adding a transaction of type expense, the user must first create a cate
 
 o	This ensures a consistent and user-defined categorization of expenses.
 
-3.	Transaction Schema Enhancement:
+2.	Transaction Schema Enhancement:
    
 o	An additional column, type of transaction (income/expense), was added to the transaction schema.
 
@@ -151,19 +156,19 @@ o	Associating categories with only expense transactions (CategoryId is mandatory
 
 o	Calculating the progress of savings goals by subtracting total expenses from total income.
 
-5.	Savings Goals:
+3.	Savings Goals:
 
 o	Savings goals track progress based on the user's total income and expenses, calculated from the transactions module.
 
 o	Progress is represented as a percentage of the savings goal's target amount, capped at 100%.
 
-6.	Authentication:
+4.	Authentication:
 
 o	JWT is used for authentication to ensure all sensitive routes are protected.
 
 o	Users must include a valid Bearer token in the header for any operations related to transactions, categories, savings goals, or reports.
 
-7.	Data Integrity:
+5.	Data Integrity:
 
 o	Validation rules are enforced across all APIs to ensure data integrity (e.g., a transaction without a type or an expense without a category will be rejected).
 
