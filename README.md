@@ -7,6 +7,7 @@ Personal Finance Manager: Installation and Setup Guide
 To set up the project, first, clone the repository from the version control system:
 
 git clone <repository-url>
+
 cd <repository-folder>
 
 2. Install Dependencies
